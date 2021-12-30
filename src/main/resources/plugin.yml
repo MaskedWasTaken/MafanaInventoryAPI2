@@ -1,6 +1,6 @@
-name: MafanInventoryAPI
-version: ${project.version}
+name: MafanaInventoryAPI
+version: 1.0
 main: me.TahaCheji.Inv
+author: TahaCheji
+description: test
 api-version: 1.16
-authors: [ TahaCheji ]
-description: A multi network inventory API

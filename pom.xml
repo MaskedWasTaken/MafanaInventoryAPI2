@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>MafanInventoryAPI</groupId>
-    <artifactId>MafanInventoryAPI</artifactId>
+    <groupId>MafanaInventoryAPI</groupId>
+    <artifactId>MafanaInventoryAPI</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>MafanInventoryAPI</name>
+    <name>MafanaInventoryAPI</name>
 
     <description>A multi network inventory API</description>
     <properties>
@@ -50,6 +50,9 @@
                 <directory>src/inv/resources</directory>
                 <filtering>true</filtering>
             </resource>
+                <resource>
+                    <directory>src/main/resources</directory>
+                </resource>
         </resources>
     </build>
 
@@ -75,9 +78,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.16.3-R0.1-SNAPSHOT</version>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -89,6 +92,7 @@
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>
             <version>4.6.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
